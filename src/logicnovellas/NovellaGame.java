@@ -8,8 +8,8 @@ public class NovellaGame {
     private String poster;
     private String description;
     private int rating;
-    private Date createDate;
-    private Date updateDate;
     private int ageRestriction;
     private String duration;
+    private Date createDate;
+    private Date updateDate;
 }

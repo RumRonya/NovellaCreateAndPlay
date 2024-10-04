@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="field id" />
+    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="class NovellaGame - field">
+      <change afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logicnovellas/NovellaGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/NovellaGame.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +24,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "RumRonya"
+  }
+}]]></component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="b8dd6776-6ebc-402d-ae87-b710d4d96da8" />
   </component>
@@ -74,7 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1727964221300</updated>
       <workItem from="1727964222630" duration="7000" />
-      <workItem from="1728026250843" duration="1545000" />
+      <workItem from="1728026250843" duration="2677000" />
     </task>
     <task id="LOCAL-00001" summary="2 new classes">
       <option name="closed" value="true" />
@@ -92,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728027803458</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="class NovellaGame - field">
+      <option name="closed" value="true" />
+      <created>1728028264226</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728028264226</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,7 +158,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2 new classes" />
     <MESSAGE value="field id" />
-    <option name="LAST_COMMIT_MESSAGE" value="field id" />
+    <MESSAGE value="class NovellaGame - field" />
+    <option name="LAST_COMMIT_MESSAGE" value="class NovellaGame - field" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
