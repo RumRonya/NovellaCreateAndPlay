@@ -1,4 +1,10 @@
 package logicnovellas.novellaparts.gameplayelements;
 
-public class Answer {
+import logicnovellas.novellaparts.gameplayelements.dependencies.Dependent;
+
+public class Answer extends Dependent {
+    @Override
+    public boolean isPlay(PlayProgress playProgress) {
+        return false;
+    }
 }

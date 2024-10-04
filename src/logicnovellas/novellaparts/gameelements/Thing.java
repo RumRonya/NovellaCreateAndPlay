@@ -1,4 +1,9 @@
 package logicnovellas.novellaparts.gameelements;
 
-public class Thing {
+import logicnovellas.novellaparts.gameplayelements.dependencies.DependencyDefinable;
+
+public class Thing implements DependencyDefinable {
+    private String name;
+    private int idGame;
+    private String img;
 }

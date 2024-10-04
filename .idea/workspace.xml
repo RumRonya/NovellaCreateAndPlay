@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="a lit change">
-      <change afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameelements/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameelements/Thing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/Answer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/Dialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logicnovellas/novellaparts/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/Scene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logicnovellas/novellaparts/dependencies/DependenciesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/dependencies/DependenciesList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logicnovellas/novellaparts/dependencies/Dependency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/dependencies/Dependency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logicnovellas/novellaparts/dependencies/DependencyLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/dependencies/DependencyLogic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/ChangerInventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/dependencies/Dependecible.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/Answer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -94,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1727964221300</updated>
       <workItem from="1727964222630" duration="7000" />
-      <workItem from="1728026250843" duration="3693000" />
+      <workItem from="1728026250843" duration="4849000" />
     </task>
     <task id="LOCAL-00001" summary="2 new classes">
       <option name="closed" value="true" />
@@ -136,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728029972809</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="a lit change">
+      <option name="closed" value="true" />
+      <created>1728030031285</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728030031285</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
