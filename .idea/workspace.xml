@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NovellasCreateAndPlayProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logicnovellas/NovellaGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/users/User.java" afterDir="false" />
-    </list>
+    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="field id" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +22,15 @@
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="b8dd6776-6ebc-402d-ae87-b710d4d96da8" />
+  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/RumRonya/NovellaCreateAndPlay",
+    "accountId": "b8dd6776-6ebc-402d-ae87-b710d4d96da8"
+  }
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -75,8 +74,25 @@
       <option name="presentableId" value="Default" />
       <updated>1727964221300</updated>
       <workItem from="1727964222630" duration="7000" />
-      <workItem from="1728026250843" duration="905000" />
+      <workItem from="1728026250843" duration="1545000" />
     </task>
+    <task id="LOCAL-00001" summary="2 new classes">
+      <option name="closed" value="true" />
+      <created>1728027414653</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728027414653</updated>
+    </task>
+    <task id="LOCAL-00002" summary="field id">
+      <option name="closed" value="true" />
+      <created>1728027803458</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728027803458</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,7 +109,13 @@
       <map>
         <entry key="73919190-4103-47f8-b220-2edeb456cb6d">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
         <entry key="MAIN">
@@ -114,6 +136,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2 new classes" />
+    <MESSAGE value="field id" />
+    <option name="LAST_COMMIT_MESSAGE" value="field id" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
