@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="class NovellaGame - field">
-      <change afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/Scene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logicnovellas/NovellaGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/NovellaGame.java" afterDir="false" />
+    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="a lit change">
+      <change afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameelements/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameelements/Thing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/Answer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/Dialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logicnovellas/novellaparts/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logicnovellas/novellaparts/dependencies/DependenciesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/dependencies/DependenciesList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logicnovellas/novellaparts/dependencies/Dependency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/dependencies/Dependency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logicnovellas/novellaparts/dependencies/DependencyLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/dependencies/DependencyLogic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +72,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="logicnovellas.novellaparts.dependencies" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -84,7 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1727964221300</updated>
       <workItem from="1727964222630" duration="7000" />
-      <workItem from="1728026250843" duration="2677000" />
+      <workItem from="1728026250843" duration="3693000" />
     </task>
     <task id="LOCAL-00001" summary="2 new classes">
       <option name="closed" value="true" />
@@ -110,7 +120,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728028264226</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="package Dependency">
+      <option name="closed" value="true" />
+      <created>1728029589209</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728029589209</updated>
+    </task>
+    <task id="LOCAL-00005" summary="a lit change">
+      <option name="closed" value="true" />
+      <created>1728029972809</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728029972809</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +185,9 @@
     <MESSAGE value="2 new classes" />
     <MESSAGE value="field id" />
     <MESSAGE value="class NovellaGame - field" />
-    <option name="LAST_COMMIT_MESSAGE" value="class NovellaGame - field" />
+    <MESSAGE value="package Dependency" />
+    <MESSAGE value="a lit change" />
+    <option name="LAST_COMMIT_MESSAGE" value="a lit change" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
