@@ -1,4 +1,11 @@
 package logicnovellas.novellaparts.gameplayelements;
 
-public class Dialog {
+import logicnovellas.novellaparts.gameplayelements.dependencies.Dependent;
+import playprogressparts.PlayProgress;
+
+public class Dialog implements Dependent {
+    @Override
+    public boolean isPlay(PlayProgress playProgress) {
+        return false;
+    }
 }

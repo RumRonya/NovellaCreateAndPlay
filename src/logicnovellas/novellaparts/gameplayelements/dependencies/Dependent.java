@@ -1,8 +1,9 @@
 package logicnovellas.novellaparts.gameplayelements.dependencies;
 
-public abstract class Dependent {
-    private DependenciesList dependenciesList;
-    private DependencyLogic dependencyLogic;
+import playprogressparts.PlayProgress;
 
-    public abstract boolean isPlay(PlayProgress playProgress);
+public interface Dependent {
+    public DependenciesList dependenciesList = null;
+
+    public boolean isPlay(PlayProgress playProgress);
 }
