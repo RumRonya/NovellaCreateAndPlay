@@ -1,4 +1,4 @@
-package logicnovellas.novellaparts.dependencies;
+package logicnovellas.novellaparts.gameplayelements.dependencies;
 
 public class Dependency {
     private boolean isHas;

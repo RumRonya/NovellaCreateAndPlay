@@ -1,6 +1,4 @@
-package logicnovellas.novellaparts;
-
-import java.awt.*;
+package logicnovellas.novellaparts.gameplayelements;
 
 public class Scene {
     private int ID_NOVELLA;
