@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="a lit change">
-      <change afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/ChangerInventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/dependencies/Dependecible.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/Answer.java" afterDir="false" />
+    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="fix a bit">
+      <change afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/inventory/ChangeType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/inventory/ChangerInventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/ChangerInventory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/dependencies/DependenciesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/dependencies/DependenciesList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/dependencies/Dependent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/dependencies/Dependent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,21 +28,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "RumRonya"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;RumRonya&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="b8dd6776-6ebc-402d-ae87-b710d4d96da8" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/RumRonya/NovellaCreateAndPlay",
-    "accountId": "b8dd6776-6ebc-402d-ae87-b710d4d96da8"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/RumRonya/NovellaCreateAndPlay&quot;,
+    &quot;accountId&quot;: &quot;b8dd6776-6ebc-402d-ae87-b710d4d96da8&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
   </component>
@@ -52,22 +55,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "D:/IdeaProjects/NovellasCreateAndPlayProject/src/Main.java",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/IdeaProjects/NovellasCreateAndPlayProject/src/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="logicnovellas.novellaparts.dependencies" />
@@ -91,6 +94,8 @@
       <updated>1727964221300</updated>
       <workItem from="1727964222630" duration="7000" />
       <workItem from="1728026250843" duration="4849000" />
+      <workItem from="1728066028654" duration="1697000" />
+      <workItem from="1728109533686" duration="390000" />
     </task>
     <task id="LOCAL-00001" summary="2 new classes">
       <option name="closed" value="true" />
@@ -140,7 +145,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728030031285</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="new classes">
+      <option name="closed" value="true" />
+      <created>1728067474311</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728067474311</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix a bit">
+      <option name="closed" value="true" />
+      <created>1728067662693</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728067662693</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,7 +212,9 @@
     <MESSAGE value="class NovellaGame - field" />
     <MESSAGE value="package Dependency" />
     <MESSAGE value="a lit change" />
-    <option name="LAST_COMMIT_MESSAGE" value="a lit change" />
+    <MESSAGE value="new classes" />
+    <MESSAGE value="fix a bit" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix a bit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
