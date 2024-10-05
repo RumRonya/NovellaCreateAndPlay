@@ -3,6 +3,6 @@ package logicnovellas.novellaparts.gameplayelements.dependencies;
 import java.util.List;
 
 public class DependenciesList {
-    private List<Dependency> listDependencies;
-    private DependencyLogic dependencyLogic;
+    public List<Dependency> listDependencies;
+    public DependencyLogic dependencyLogic;
 }
