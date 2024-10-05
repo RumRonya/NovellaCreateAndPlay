@@ -1,5 +1,8 @@
 package logicnovellas.novellaparts.gameplayelements;
 
+import logicnovellas.novellaparts.gameplayelements.answers.Answer;
+import logicnovellas.novellaparts.gameplayelements.dialogs.Dialog;
+
 import java.util.List;
 
 public class Scene {

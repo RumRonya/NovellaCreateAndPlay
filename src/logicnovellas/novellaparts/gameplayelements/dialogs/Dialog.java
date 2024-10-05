@@ -1,4 +1,4 @@
-package logicnovellas.novellaparts.gameplayelements;
+package logicnovellas.novellaparts.gameplayelements.dialogs;
 
 import logicnovellas.novellaparts.gameelements.Person;
 import logicnovellas.novellaparts.gameplayelements.dependencies.DependenciesList;
@@ -12,6 +12,7 @@ public class Dialog extends ChangerInventory implements Dependent {
     private int numDialog;
     private Person person;
     private String imgPerson;
+    private Position position;
     private DependenciesList dependencies;
 
     @Override

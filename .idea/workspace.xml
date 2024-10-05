@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="fix a bit">
-      <change afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/inventory/ChangeType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/inventory/ChangerInventory.java" afterDir="false" />
+    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="dependencies and inventory">
+      <change afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/answers/TypeEnd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/dialogs/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/playprogressparts/CheckPoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/ChangerInventory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/dependencies/DependenciesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/dependencies/DependenciesList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/dependencies/Dependent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/dependencies/Dependent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameelements/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameelements/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameelements/Thing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameelements/Thing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/answers/Answer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/Dialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/dialogs/Dialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/playprogressparts/PlayProgress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/playprogressparts/PlayProgress.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -72,7 +76,13 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="playprogressparts" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="logicnovellas.novellaparts.gameplayelements.answers" />
+      <recent name="logicnovellas.novellaparts.gameelements" />
+      <recent name="logicnovellas.novellaparts.gameplayelements" />
       <recent name="logicnovellas.novellaparts.dependencies" />
     </key>
   </component>
@@ -95,7 +105,7 @@
       <workItem from="1727964222630" duration="7000" />
       <workItem from="1728026250843" duration="4849000" />
       <workItem from="1728066028654" duration="1697000" />
-      <workItem from="1728109533686" duration="390000" />
+      <workItem from="1728109533686" duration="4877000" />
     </task>
     <task id="LOCAL-00001" summary="2 new classes">
       <option name="closed" value="true" />
@@ -161,7 +171,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728067662693</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="dependencies and inventory">
+      <option name="closed" value="true" />
+      <created>1728109965436</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1728109965436</updated>
+    </task>
+    <task id="LOCAL-00010" summary="dependencies and inventory">
+      <option name="closed" value="true" />
+      <created>1728111416502</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1728111416502</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,7 +240,8 @@
     <MESSAGE value="a lit change" />
     <MESSAGE value="new classes" />
     <MESSAGE value="fix a bit" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix a bit" />
+    <MESSAGE value="dependencies and inventory" />
+    <option name="LAST_COMMIT_MESSAGE" value="dependencies and inventory" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
