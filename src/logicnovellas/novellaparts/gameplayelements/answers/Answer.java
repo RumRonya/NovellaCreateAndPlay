@@ -22,4 +22,8 @@ public class Answer extends ChangerInventory implements Dependent {
         }
         return (dependencies.dependencyLogic==DependencyLogic.OR) ? false : true;
     }
+
+    public boolean isFinal(){
+        return typeEnd!=TypeEnd.NONE;
+    }
 }

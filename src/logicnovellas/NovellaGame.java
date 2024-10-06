@@ -1,5 +1,7 @@
 package logicnovellas;
 
+import logicnovellas.novellaparts.gameplayelements.Scene;
+
 import java.util.Date;
 
 public class NovellaGame {
@@ -12,4 +14,8 @@ public class NovellaGame {
     private String duration;
     private Date createDate;
     private Date updateDate;
+
+    public Scene sceneByNum(int i) {
+        return new Scene();
+    }
 }

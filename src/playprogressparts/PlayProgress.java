@@ -1,5 +1,6 @@
 package playprogressparts;
 
+import logicnovellas.NovellaGame;
 import logicnovellas.novellaparts.gameelements.Thing;
 import logicnovellas.novellaparts.gameplayelements.Scene;
 import logicnovellas.novellaparts.gameplayelements.dependencies.DependencyDefinable;
@@ -8,10 +9,9 @@ import java.util.List;
 
 public class PlayProgress {
     private int ID_USER;
-    private int ID_GAME;
+    public NovellaGame novellaGame;
     private List<Thing> inventory;
     private List<Choice> choiceList;
-    private Scene currentScene;
     private CheckPoint checkPoint;
 
     public boolean isContain(DependencyDefinable dependentObject) {
@@ -37,4 +37,7 @@ public class PlayProgress {
         return false;
     }
 
+    public int numCurrentScene() {
+        return 0;
+    }
 }
