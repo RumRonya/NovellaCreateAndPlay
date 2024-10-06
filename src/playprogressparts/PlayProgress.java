@@ -15,24 +15,26 @@ public class PlayProgress {
     private CheckPoint checkPoint;
 
     public boolean isContain(DependencyDefinable dependentObject) {
-        return true;
+        if (dependentObject==null) return false;
+        if (dependentObject instanceof Choice) return isContainChoice((Choice) dependentObject);
+        if (dependentObject instanceof Thing) return  isContainThing((Thing) dependentObject);
+        return false;
     }
-    /*
-    * public boolean isHasInProgress(Choice choice) {
+
+    private boolean isContainChoice(Choice choice) {
         for (Choice ch: choiceList){
-            if (ch.getNumScene()==choice.getNumScene()){
-                if (choice.getNumAnswer()==0||ch.getNumAnswer()==choice.getNumAnswer())
-                    return true;
+            if (ch.numScene==choice.numScene){
+                if (choice.numAnswer==0||ch.numAnswer==choice.numAnswer) return true;
             }
         }
         return false;
     }
-    public boolean isHasInProgress(Thing thing) {
-        for (Thing th: pack){
-            if (th.equals(thing)){
-                return true;
-            }
+
+    private boolean isContainThing(Thing thing) {
+        for (Thing th: inventory){
+            if (th.equals(thing)) return true;
         }
         return false;
-    }*/
+    }
+
 }

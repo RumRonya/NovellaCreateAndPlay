@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="ew fields">
+    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="dependencies and progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/answers/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/answers/Answer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/dependencies/DependenciesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/dependencies/DependenciesList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/dependencies/Dependency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/dependencies/Dependency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/dialogs/Dialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/novellaparts/gameplayelements/dialogs/Dialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/playprogressparts/PlayProgress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/playprogressparts/PlayProgress.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +97,7 @@
       <workItem from="1728026250843" duration="4849000" />
       <workItem from="1728066028654" duration="1697000" />
       <workItem from="1728109533686" duration="4877000" />
-      <workItem from="1728144797746" duration="1802000" />
+      <workItem from="1728144797746" duration="3073000" />
     </task>
     <task id="LOCAL-00001" summary="2 new classes">
       <option name="closed" value="true" />
@@ -192,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728144843817</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="dependencies and progress">
+      <option name="closed" value="true" />
+      <created>1728146679172</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1728146679172</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +250,8 @@
     <MESSAGE value="fix a bit" />
     <MESSAGE value="dependencies and inventory" />
     <MESSAGE value="ew fields" />
-    <option name="LAST_COMMIT_MESSAGE" value="ew fields" />
+    <MESSAGE value="dependencies and progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="dependencies and progress" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
