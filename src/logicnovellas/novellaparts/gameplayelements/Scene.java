@@ -12,22 +12,36 @@ public class Scene {
     private int numScene;
     private String nameScene;
     private String background;
-    private List<Dialog> dialogs;
-    private List<Answer> answers;
+    public List<Dialog> dialogs;
+    public List<Answer> answers;
 
     public Scene convertToPlayScene(PlayProgress playProgress){
         List<Answer> playAnswers = new ArrayList<>();
         for (Answer answer : answers) {
-            if (answer.isPlay(playProgress)) playAnswers.add(answer);
+            if (answer.isPlay(playProgress, null)) playAnswers.add(answer);
         }
         answers = playAnswers;
 
         List<Dialog> playDialogs = new ArrayList<>();
         for (Dialog dialog : dialogs) {
-            if (dialog.isPlay(playProgress)) playDialogs.add(dialog);
+            if (dialog.isPlay(playProgress, null)) playDialogs.add(dialog);
         }
         dialogs = playDialogs;
 
         return this;
+    }
+
+    public int getNumNextSceneByPlayAnswer(int numAnswer) {
+        for (Answer answer : answers) {
+            if (answer.numAnswer == numAnswer) {return answer.nextScene;}
+        }
+        return 0;
+    }
+
+    public Answer getAnswerByNum(int numAnswer) {
+        for (Answer answer : answers) {
+            if (answer.numAnswer == numAnswer) {return answer;}
+        }
+        return null;
     }
 }

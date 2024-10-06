@@ -10,12 +10,13 @@ public abstract class ChangerInventory {
 
     public ChangerInventory() {}
 
-    public void runChangerInventory(PlayProgress playProgress) {}
-
     public void addChangerInventory(Thing thing, ChangeType changeType) {}
 
     public void removeChangerInventory(Thing thing) {}
 
     public void clearChangerInventory() {}
-    
+
+    public void run(PlayProgress playProgress){
+
+    }
 }

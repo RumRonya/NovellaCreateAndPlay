@@ -38,6 +38,7 @@ public class PlayProgress {
     }
 
     public int numCurrentScene() {
-        return 0;
+        Scene lastScene = novellaGame.sceneByNum(choiceList.getLast().numScene);
+        return lastScene.getNumNextSceneByPlayAnswer(choiceList.getLast().numAnswer);
     }
 }
