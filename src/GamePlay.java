@@ -2,6 +2,7 @@ import logicnovellas.NovellaGame;
 import logicnovellas.novellaparts.gameplayelements.Scene;
 import logicnovellas.novellaparts.gameplayelements.answers.Answer;
 import logicnovellas.novellaparts.gameplayelements.dialogs.Dialog;
+import playprogressparts.Choice;
 import playprogressparts.PlayProgress;
 
 public class GamePlay {
@@ -30,6 +31,7 @@ public class GamePlay {
             currentScene = playProgress.gameOver(answer.typeEnd);
         }
         else {
+            playProgress.choiceList.add(new Choice(currentScene.numScene, numAnswer));
             int numNextScene = currentScene.getNumNextSceneByPlayAnswer(numAnswer);
             currentScene = novellaGame.sceneByNum(numNextScene);
         }

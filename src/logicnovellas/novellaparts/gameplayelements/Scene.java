@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Scene {
     private int ID_NOVELLA;
-    private int numScene;
+    public int numScene;
     private String nameScene;
     private String background;
     public List<Dialog> dialogs;

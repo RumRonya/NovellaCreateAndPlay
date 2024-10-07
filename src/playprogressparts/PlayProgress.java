@@ -12,7 +12,7 @@ public class PlayProgress {
     private int ID_USER;
     public NovellaGame novellaGame;
     private List<Thing> inventory;
-    private List<Choice> choiceList;
+    public List<Choice> choiceList;
     private CheckPoint checkPoint;
 
     public boolean isContain(DependencyDefinable dependentObject) {
@@ -55,5 +55,18 @@ public class PlayProgress {
             choiceList.add(new Choice(0,0));
         }
         return getCurrentScene();
+    }
+
+    private void returnToCheckPoint() {
+        inventory = checkPoint.inventory;
+        choiceList = checkPoint.choiceList;
+    }
+
+    public void addThing(Thing thing) {
+        inventory.add(thing);
+    }
+
+    public void removeThing(Thing thing) {
+        inventory.remove(thing);
     }
 }
