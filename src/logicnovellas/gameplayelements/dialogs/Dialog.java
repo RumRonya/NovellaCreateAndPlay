@@ -1,8 +1,7 @@
-package logicnovellas.novellaparts.gameplayelements.dialogs;
+package logicnovellas.gameplayelements.dialogs;
 
-import logicnovellas.novellaparts.gameelements.Person;
-import logicnovellas.novellaparts.gameplayelements.dependencies.DependenciesList;
-import logicnovellas.novellaparts.gameplayelements.inventory.ChangerInventory;
+import logicnovellas.gameplayelements.dependencies.DependenciesList;
+import logicnovellas.gameplayelements.inventory.ChangerInventory;
 import playprogressparts.PlayProgress;
 
 public class Dialog extends ChangerInventory{

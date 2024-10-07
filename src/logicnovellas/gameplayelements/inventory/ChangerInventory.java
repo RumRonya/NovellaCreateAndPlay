@@ -1,10 +1,11 @@
-package logicnovellas.novellaparts.gameplayelements.inventory;
+package logicnovellas.gameplayelements.inventory;
 
-import logicnovellas.novellaparts.gameelements.Thing;
 import playprogressparts.PlayProgress;
 
 import java.util.HashMap;
 import java.util.Map;
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!equal hash
 
 public abstract class ChangerInventory {
     private Map<Thing, ChangeType> changerInventory;

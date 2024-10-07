@@ -1,6 +1,6 @@
 package logicnovellas;
 
-import logicnovellas.novellaparts.gameplayelements.Scene;
+import logicnovellas.gameplayelements.Scene;
 
 import java.util.Date;
 

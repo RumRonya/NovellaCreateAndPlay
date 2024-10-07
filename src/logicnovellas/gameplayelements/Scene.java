@@ -1,7 +1,7 @@
-package logicnovellas.novellaparts.gameplayelements;
+package logicnovellas.gameplayelements;
 
-import logicnovellas.novellaparts.gameplayelements.answers.Answer;
-import logicnovellas.novellaparts.gameplayelements.dialogs.Dialog;
+import logicnovellas.gameplayelements.answers.Answer;
+import logicnovellas.gameplayelements.dialogs.Dialog;
 import playprogressparts.PlayProgress;
 
 import java.util.ArrayList;

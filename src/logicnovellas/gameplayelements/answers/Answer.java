@@ -1,7 +1,8 @@
-package logicnovellas.novellaparts.gameplayelements.answers;
+package logicnovellas.gameplayelements.answers;
 
+import logicnovellas.gameplayelements.dependencies.DependenciesList;
 import logicnovellas.novellaparts.gameplayelements.dependencies.*;
-import logicnovellas.novellaparts.gameplayelements.inventory.ChangerInventory;
+import logicnovellas.gameplayelements.inventory.ChangerInventory;
 import playprogressparts.PlayProgress;
 
 public class Answer extends ChangerInventory{

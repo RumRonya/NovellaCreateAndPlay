@@ -1,4 +1,4 @@
-package logicnovellas.novellaparts.gameelements;
+package logicnovellas.gameplayelements.dialogs;
 
 import java.util.List;
 

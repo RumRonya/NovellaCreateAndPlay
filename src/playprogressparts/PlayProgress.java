@@ -1,10 +1,10 @@
 package playprogressparts;
 
 import logicnovellas.NovellaGame;
-import logicnovellas.novellaparts.gameelements.Thing;
-import logicnovellas.novellaparts.gameplayelements.Scene;
-import logicnovellas.novellaparts.gameplayelements.answers.TypeEnd;
-import logicnovellas.novellaparts.gameplayelements.dependencies.DependencyDefinable;
+import logicnovellas.gameplayelements.inventory.Thing;
+import logicnovellas.gameplayelements.Scene;
+import logicnovellas.gameplayelements.answers.TypeEnd;
+import logicnovellas.gameplayelements.dependencies.DependencyDefinable;
 
 import java.util.List;
 

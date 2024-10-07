@@ -1,6 +1,6 @@
 package playprogressparts;
 
-import logicnovellas.novellaparts.gameelements.Thing;
+import logicnovellas.gameplayelements.inventory.Thing;
 
 import java.util.List;
 

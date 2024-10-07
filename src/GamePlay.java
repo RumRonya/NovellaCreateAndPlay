@@ -1,7 +1,7 @@
 import logicnovellas.NovellaGame;
-import logicnovellas.novellaparts.gameplayelements.Scene;
-import logicnovellas.novellaparts.gameplayelements.answers.Answer;
-import logicnovellas.novellaparts.gameplayelements.dialogs.Dialog;
+import logicnovellas.gameplayelements.Scene;
+import logicnovellas.gameplayelements.answers.Answer;
+import logicnovellas.gameplayelements.dialogs.Dialog;
 import playprogressparts.Choice;
 import playprogressparts.PlayProgress;
 
