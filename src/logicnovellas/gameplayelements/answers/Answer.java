@@ -1,7 +1,6 @@
 package logicnovellas.gameplayelements.answers;
 
 import logicnovellas.gameplayelements.dependencies.DependenciesList;
-import logicnovellas.novellaparts.gameplayelements.dependencies.*;
 import logicnovellas.gameplayelements.inventory.ChangerInventory;
 import playprogressparts.PlayProgress;
 
