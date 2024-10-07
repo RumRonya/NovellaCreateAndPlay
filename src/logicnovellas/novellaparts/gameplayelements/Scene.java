@@ -14,17 +14,18 @@ public class Scene {
     private String background;
     public List<Dialog> dialogs;
     public List<Answer> answers;
+    public boolean isCheckPoint;
 
     public Scene convertToPlayScene(PlayProgress playProgress){
         List<Answer> playAnswers = new ArrayList<>();
         for (Answer answer : answers) {
-            if (answer.isPlay(playProgress, null)) playAnswers.add(answer);
+            if (answer.isPlay(playProgress)) playAnswers.add(answer);
         }
         answers = playAnswers;
 
         List<Dialog> playDialogs = new ArrayList<>();
         for (Dialog dialog : dialogs) {
-            if (dialog.isPlay(playProgress, null)) playDialogs.add(dialog);
+            if (dialog.isPlay(playProgress)) playDialogs.add(dialog);
         }
         dialogs = playDialogs;
 

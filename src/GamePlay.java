@@ -12,7 +12,7 @@ public class GamePlay {
     public GamePlay(PlayProgress playProgress) {
         this.novellaGame = playProgress.novellaGame;
         this.playProgress = playProgress;
-        Scene lastScene = novellaGame.sceneByNum(playProgress.numCurrentScene());
+        Scene lastScene = playProgress.getCurrentScene();
         this.currentScene = lastScene.convertToPlayScene(playProgress);
     }
 
@@ -27,10 +27,17 @@ public class GamePlay {
 
         Answer answer = currentScene.getAnswerByNum(numAnswer);
         if (answer.isFinal()){
+            currentScene = playProgress.gameOver(answer.typeEnd);
+        }
+        else {
+            int numNextScene = currentScene.getNumNextSceneByPlayAnswer(numAnswer);
+            currentScene = novellaGame.sceneByNum(numNextScene);
         }
 
-        int numNextScene = currentScene.getNumNextSceneByPlayAnswer(numAnswer);
-        currentScene = novellaGame.sceneByNum(numNextScene).convertToPlayScene(playProgress);
+        if (currentScene.isCheckPoint) {
+            updateCheckPoint();
+        }
+        currentScene = currentScene.convertToPlayScene(playProgress);
 
         return currentScene;
     }

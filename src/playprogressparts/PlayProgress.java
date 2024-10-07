@@ -3,6 +3,7 @@ package playprogressparts;
 import logicnovellas.NovellaGame;
 import logicnovellas.novellaparts.gameelements.Thing;
 import logicnovellas.novellaparts.gameplayelements.Scene;
+import logicnovellas.novellaparts.gameplayelements.answers.TypeEnd;
 import logicnovellas.novellaparts.gameplayelements.dependencies.DependencyDefinable;
 
 import java.util.List;
@@ -37,8 +38,22 @@ public class PlayProgress {
         return false;
     }
 
-    public int numCurrentScene() {
+    public Scene getCurrentScene() {
+        return novellaGame.sceneByNum(numCurrentScene());
+    }
+
+    private int numCurrentScene() {
         Scene lastScene = novellaGame.sceneByNum(choiceList.getLast().numScene);
         return lastScene.getNumNextSceneByPlayAnswer(choiceList.getLast().numAnswer);
+    }
+
+    public Scene gameOver(TypeEnd typeEnd){
+        if (typeEnd==TypeEnd.BAD) {
+            returnToCheckPoint();
+        }
+        else {
+            choiceList.add(new Choice(0,0));
+        }
+        return getCurrentScene();
     }
 }
