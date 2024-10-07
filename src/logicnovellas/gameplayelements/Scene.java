@@ -34,14 +34,14 @@ public class Scene {
 
     public int getNumNextSceneByPlayAnswer(int numAnswer) {
         for (Answer answer : answers) {
-            if (answer.numAnswer == numAnswer) {return answer.nextScene;}
+            if (answer.getNumAnswer() == numAnswer) return answer.getNextScene();
         }
         return 0;
     }
 
     public Answer getAnswerByNum(int numAnswer) {
         for (Answer answer : answers) {
-            if (answer.numAnswer == numAnswer) {return answer;}
+            if (answer.getNumAnswer() == numAnswer) return answer;
         }
         return null;
     }

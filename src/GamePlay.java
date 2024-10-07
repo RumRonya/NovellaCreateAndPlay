@@ -28,7 +28,7 @@ public class GamePlay {
 
         Answer answer = currentScene.getAnswerByNum(numAnswer);
         if (answer.isFinal()){
-            currentScene = playProgress.gameOver(answer.typeEnd);
+            currentScene = playProgress.gameOver(answer.getTypeEnd());
         }
         else {
             playProgress.choiceList.add(new Choice(currentScene.numScene, numAnswer));
