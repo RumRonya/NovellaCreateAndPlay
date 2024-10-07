@@ -62,6 +62,6 @@ public abstract class ChangerInventory {
                     break;
             }
         }
-
     }
+
 }

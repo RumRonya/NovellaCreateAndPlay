@@ -44,6 +44,6 @@ public class DependenciesList {
             if (dependencyLogic == DependencyLogic.OR && isShowDependency) return true;
             if (dependencyLogic == DependencyLogic.AND && !isShowDependency) return false;
         }
-        return (dependencyLogic==DependencyLogic.OR) ? false : true;
+        return dependencyLogic != DependencyLogic.OR;
     }
 }
