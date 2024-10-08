@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="Scene/Dialog/Answer">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GamePlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePlay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logicnovellas/NovellaGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/NovellaGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logicnovellas/gameplayelements/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/gameplayelements/Scene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logicnovellas/gameplayelements/inventory/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/gameplayelements/inventory/Inventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/playprogressparts/CheckPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/playprogressparts/CheckPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/playprogressparts/Choice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/playprogressparts/Choice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/playprogressparts/PlayProgress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/playprogressparts/PlayProgress.java" afterDir="false" />
-    </list>
+    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="gameplay&amp;playprogress" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +99,7 @@
       <workItem from="1728144797746" duration="3073000" />
       <workItem from="1728217680296" duration="5973000" />
       <workItem from="1728281106624" duration="5814000" />
-      <workItem from="1728366443672" duration="6173000" />
+      <workItem from="1728366443672" duration="7038000" />
     </task>
     <task id="LOCAL-00001" summary="2 new classes">
       <option name="closed" value="true" />
@@ -294,7 +285,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728371747039</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="gameplay&amp;playprogress">
+      <option name="closed" value="true" />
+      <created>1728374410481</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1728374410481</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,7 +359,8 @@
     <MESSAGE value="update inventory logic" />
     <MESSAGE value="Dialog and Person" />
     <MESSAGE value="Scene/Dialog/Answer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Scene/Dialog/Answer" />
+    <MESSAGE value="gameplay&amp;playprogress" />
+    <option name="LAST_COMMIT_MESSAGE" value="gameplay&amp;playprogress" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
