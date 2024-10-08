@@ -1,6 +1,7 @@
 package logicnovellas.gameplayelements.answers;
 
 import logicnovellas.NovellaGame;
+import logicnovellas.gameplayelements.Scene;
 import logicnovellas.gameplayelements.dependencies.DependenciesList;
 import logicnovellas.gameplayelements.inventory.*;
 import playprogressparts.PlayProgress;
@@ -8,8 +9,8 @@ import playprogressparts.PlayProgress;
 import java.util.Map;
 
 public class Answer extends ChangerInventory{
-    private NovellaGame novellaGame;
-    private int numScene;
+    private int ID_ANSWER;
+    private Scene scene;
     private int numAnswer;
     private int nextScene;
     private TypeEnd typeEnd = TypeEnd.NONE;
@@ -18,43 +19,20 @@ public class Answer extends ChangerInventory{
     public Answer() {
     }
 
-    public Answer(Map<Thing, ChangeType> changerInventory, NovellaGame novellaGame, int numScene, int numAnswer, int nextScene, TypeEnd typeEnd, DependenciesList dependenciesList) {
-        super(changerInventory);
-        this.novellaGame = novellaGame;
-        this.numScene = numScene;
-        this.numAnswer = numAnswer;
-        this.nextScene = nextScene;
-        this.typeEnd = typeEnd;
-        this.dependenciesList = dependenciesList;
+    public int getID_ANSWER() {
+        return ID_ANSWER;
     }
 
-    public Answer(int numScene, int nextScene, int numAnswer, TypeEnd typeEnd) {
-        this.numScene = numScene;
-        this.nextScene = nextScene;
-        this.numAnswer = numAnswer;
-        this.typeEnd = typeEnd;
+    public void setID_ANSWER(int ID_ANSWER) {
+        this.ID_ANSWER = ID_ANSWER;
     }
 
-    public Answer(int numScene, int nextScene, int numAnswer) {
-        this.numScene = numScene;
-        this.nextScene = nextScene;
-        this.numAnswer = numAnswer;
+    public Scene getScene() {
+        return scene;
     }
 
-    public NovellaGame getNovellaGame() {
-        return novellaGame;
-    }
-
-    public void setNovellaGame(NovellaGame novellaGame) {
-        this.novellaGame = novellaGame;
-    }
-
-    public int getNumScene() {
-        return numScene;
-    }
-
-    public void setNumScene(int numScene) {
-        this.numScene = numScene;
+    public void setScene(Scene scene) {
+        this.scene = scene;
     }
 
     public int getNumAnswer() {

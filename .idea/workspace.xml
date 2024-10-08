@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="update inventory logic">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="Dialog and Person" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +99,7 @@
       <workItem from="1728144797746" duration="3073000" />
       <workItem from="1728217680296" duration="5973000" />
       <workItem from="1728281106624" duration="5814000" />
-      <workItem from="1728366443672" duration="2312000" />
+      <workItem from="1728366443672" duration="3780000" />
     </task>
     <task id="LOCAL-00001" summary="2 new classes">
       <option name="closed" value="true" />
@@ -271,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728367942760</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Dialog and Person">
+      <option name="closed" value="true" />
+      <created>1728370865099</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1728370865099</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +341,8 @@
     <MESSAGE value="inventory" />
     <MESSAGE value="part answers" />
     <MESSAGE value="update inventory logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="update inventory logic" />
+    <MESSAGE value="Dialog and Person" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dialog and Person" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

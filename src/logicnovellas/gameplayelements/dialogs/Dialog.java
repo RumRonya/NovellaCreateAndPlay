@@ -8,7 +8,6 @@ import playprogressparts.PlayProgress;
 
 public class Dialog extends ChangerInventory{
     private int ID_DIALOG;
-    private NovellaGame novellaGame;
     private Scene scene;
     private int numDialog;
     private Person person;
@@ -20,7 +19,6 @@ public class Dialog extends ChangerInventory{
     }
 
     public Dialog(Scene scene, int numDialog, Person person, String imgPerson, Position position, int ID_DIALOG) {
-        this.novellaGame = scene.getNovella();
         this.scene = scene;
         this.numDialog = numDialog;
         this.person = person;
@@ -35,14 +33,6 @@ public class Dialog extends ChangerInventory{
 
     public void setID_DIALOG(int ID_DIALOG) {
         this.ID_DIALOG = ID_DIALOG;
-    }
-
-    public NovellaGame getNovellaGame() {
-        return novellaGame;
-    }
-
-    public void setNovellaGame(NovellaGame novellaGame) {
-        this.novellaGame = novellaGame;
     }
 
     public Scene getScene() {
