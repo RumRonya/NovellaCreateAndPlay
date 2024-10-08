@@ -1,5 +1,6 @@
 package logicnovellas.gameplayelements;
 
+import logicnovellas.NovellaGame;
 import logicnovellas.gameplayelements.answers.Answer;
 import logicnovellas.gameplayelements.dialogs.Dialog;
 import playprogressparts.PlayProgress;
@@ -15,6 +16,12 @@ public class Scene {
     public List<Dialog> dialogs;
     public List<Answer> answers;
     public boolean isCheckPoint;
+
+
+    public NovellaGame getNovella() {
+        return new NovellaGame();
+    }
+
 
     public Scene convertToPlayScene(PlayProgress playProgress){
         List<Answer> playAnswers = new ArrayList<>();
@@ -45,4 +52,5 @@ public class Scene {
         }
         return null;
     }
+
 }

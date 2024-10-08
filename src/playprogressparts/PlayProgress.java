@@ -17,6 +17,8 @@ public class PlayProgress {
     public List<Choice> choiceList;
     private CheckPoint checkPoint;
 
+
+
     public boolean isContain(DependencyDefinable dependentObject) {
         if (dependentObject==null) return false;
         if (dependentObject instanceof Choice) return isContainChoice((Choice) dependentObject);
