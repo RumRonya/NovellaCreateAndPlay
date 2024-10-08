@@ -1,17 +1,19 @@
 package playprogressparts;
 
 import logicnovellas.NovellaGame;
+import logicnovellas.gameplayelements.inventory.Inventory;
 import logicnovellas.gameplayelements.inventory.Thing;
 import logicnovellas.gameplayelements.Scene;
 import logicnovellas.gameplayelements.answers.TypeEnd;
 import logicnovellas.gameplayelements.dependencies.DependencyDefinable;
 
 import java.util.List;
+import java.util.Map;
 
 public class PlayProgress {
     private int ID_USER;
     public NovellaGame novellaGame;
-    private List<Thing> inventory;
+    private Inventory inventory;
     public List<Choice> choiceList;
     private CheckPoint checkPoint;
 
@@ -32,7 +34,7 @@ public class PlayProgress {
     }
 
     private boolean isContainThing(Thing thing) {
-        for (Thing th: inventory){
+        for (Thing th: inventory.getThings()){
             if (th.equals(thing)) return true;
         }
         return false;

@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="dependencies" />
+    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="part answers">
+      <change beforePath="$PROJECT_DIR$/src/GamePlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePlay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logicnovellas/gameplayelements/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/gameplayelements/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logicnovellas/gameplayelements/answers/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logicnovellas/gameplayelements/answers/Answer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,7 +102,7 @@
       <workItem from="1728109533686" duration="4877000" />
       <workItem from="1728144797746" duration="3073000" />
       <workItem from="1728217680296" duration="5973000" />
-      <workItem from="1728281106624" duration="4687000" />
+      <workItem from="1728281106624" duration="5814000" />
     </task>
     <task id="LOCAL-00001" summary="2 new classes">
       <option name="closed" value="true" />
@@ -236,7 +240,31 @@
       <option name="project" value="LOCAL" />
       <updated>1728287766833</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="dependencies">
+      <option name="closed" value="true" />
+      <created>1728287839899</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1728287839899</updated>
+    </task>
+    <task id="LOCAL-00019" summary="inventory">
+      <option name="closed" value="true" />
+      <created>1728288581617</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1728288581617</updated>
+    </task>
+    <task id="LOCAL-00020" summary="part answers">
+      <option name="closed" value="true" />
+      <created>1728288937740</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1728288937740</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +325,9 @@
     <MESSAGE value="dependensies and gameplay" />
     <MESSAGE value="ChangerInventory" />
     <MESSAGE value="dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="dependencies" />
+    <MESSAGE value="inventory" />
+    <MESSAGE value="part answers" />
+    <option name="LAST_COMMIT_MESSAGE" value="part answers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -7,6 +7,15 @@ public class Thing implements DependencyDefinable {
     private NovellaGame novellaGame;
     private String name;
     private String img;
+    private boolean isCountable = false;
+
+    public boolean isCountable() {
+        return isCountable;
+    }
+
+    public void setCountable(boolean countable) {
+        isCountable = countable;
+    }
 
     public Thing() {
         novellaGame = new NovellaGame();
@@ -24,6 +33,17 @@ public class Thing implements DependencyDefinable {
         this.novellaGame = novellaGame;
         this.name = name;
         this.img = img;
+    }
+
+    public Thing(String name, String img, boolean isCountable) {
+        this.name = name;
+        this.img = img;
+        this.isCountable = isCountable;
+    }
+
+    public Thing(boolean isCountable, String name) {
+        this.isCountable = isCountable;
+        this.name = name;
     }
 
     public NovellaGame getNovellaGame() {

@@ -18,21 +18,22 @@ public class GamePlay {
     }
 
     public Scene runCurrentScene(int numAnswer){
+        return runCurrentScene(currentScene.getAnswerByNum(numAnswer));
+    }
+
+    public Scene runCurrentScene(Answer answer){
         for (Dialog dialog: currentScene.dialogs){
             dialog.run(playProgress);
         }
 
-        for (Answer answer: currentScene.answers){
-            answer.run(playProgress);
-        }
+        answer.run(playProgress);
 
-        Answer answer = currentScene.getAnswerByNum(numAnswer);
         if (answer.isFinal()){
             currentScene = playProgress.gameOver(answer.getTypeEnd());
         }
         else {
-            playProgress.choiceList.add(new Choice(currentScene.numScene, numAnswer));
-            int numNextScene = currentScene.getNumNextSceneByPlayAnswer(numAnswer);
+            playProgress.choiceList.add(new Choice(currentScene.numScene, answer.getNumAnswer()));
+            int numNextScene = currentScene.getNumNextSceneByPlayAnswer(answer.getNumAnswer());
             currentScene = novellaGame.sceneByNum(numNextScene);
         }
 
