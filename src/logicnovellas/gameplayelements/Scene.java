@@ -11,12 +11,12 @@ import java.util.List;
 public class Scene {
     private int ID_SCENE;
     private NovellaGame novellaGame;
-    public int numScene;
+    private int numScene;
     private String nameScene;
     private String background;
-    public List<Dialog> dialogs;
-    public List<Answer> answers;
-    public boolean isCheckPoint;
+    private List<Dialog> dialogs;
+    private List<Answer> answers;
+    private boolean isCheckPoint;
 
     public Scene() {
     }

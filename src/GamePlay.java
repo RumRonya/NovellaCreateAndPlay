@@ -22,7 +22,7 @@ public class GamePlay {
     }
 
     public Scene runCurrentScene(Answer answer){
-        for (Dialog dialog: currentScene.dialogs){
+        for (Dialog dialog: currentScene.getDialogs()){
             dialog.run(playProgress);
         }
 
@@ -32,20 +32,17 @@ public class GamePlay {
             currentScene = playProgress.gameOver(answer.getTypeEnd());
         }
         else {
-            playProgress.choiceList.add(new Choice(currentScene.numScene, answer.getNumAnswer()));
+            playProgress.choiceList.add(new Choice(currentScene.getNumScene(), answer.getNumAnswer()));
             int numNextScene = currentScene.getNumNextSceneByPlayAnswer(answer.getNumAnswer());
             currentScene = novellaGame.sceneByNum(numNextScene);
         }
 
-        if (currentScene.isCheckPoint) {
-            updateCheckPoint();
+        if (currentScene.isCheckPoint()) {
+            playProgress.updateCheckPoint();
         }
         currentScene = currentScene.convertToPlayScene(playProgress);
 
         return currentScene;
     }
 
-    private void updateCheckPoint(){
-        //realise
-    }
 }

@@ -40,4 +40,8 @@ public class Inventory {
             this.things.remove(thing);
         }
     }
+
+    public void clear() {
+        this.things = null;
+    }
 }

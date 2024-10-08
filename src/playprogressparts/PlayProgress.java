@@ -8,7 +8,6 @@ import logicnovellas.gameplayelements.answers.TypeEnd;
 import logicnovellas.gameplayelements.dependencies.DependencyDefinable;
 
 import java.util.List;
-import java.util.Map;
 
 public class PlayProgress {
     private int ID_USER;
@@ -28,8 +27,8 @@ public class PlayProgress {
 
     private boolean isContainChoice(Choice choice) {
         for (Choice ch: choiceList){
-            if (ch.numScene==choice.numScene){
-                if (choice.numAnswer==0||ch.numAnswer==choice.numAnswer) return true;
+            if (ch.getNumScene()==choice.getNumScene()){
+                if (choice.getNumAnswer()==0||ch.getNumAnswer()==choice.getNumAnswer()) return true;
             }
         }
         return false;
@@ -47,23 +46,18 @@ public class PlayProgress {
     }
 
     private int numCurrentScene() {
-        Scene lastScene = novellaGame.sceneByNum(choiceList.getLast().numScene);
-        return lastScene.getNumNextSceneByPlayAnswer(choiceList.getLast().numAnswer);
+        Scene lastScene = novellaGame.sceneByNum(choiceList.getLast().getNumScene());
+        return lastScene.getNumNextSceneByPlayAnswer(choiceList.getLast().getNumAnswer());
     }
 
     public Scene gameOver(TypeEnd typeEnd){
         if (typeEnd==TypeEnd.BAD) {
-            returnToCheckPoint();
+            backToCheckPoint();
         }
         else {
             choiceList.add(new Choice(0,0));
         }
         return getCurrentScene();
-    }
-
-    private void returnToCheckPoint() {
-        inventory = checkPoint.inventory;
-        choiceList = checkPoint.choiceList;
     }
 
     public void addThing(Thing thing) {
@@ -72,5 +66,19 @@ public class PlayProgress {
 
     public void removeThing(Thing thing) {
         inventory.remove(thing);
+    }
+
+    public void updateCheckPoint() {
+        checkPoint.setChoiceList(choiceList);
+        checkPoint.setInventory(inventory);
+    }
+
+    public void backToCheckPoint() {
+        choiceList = checkPoint.getChoiceList();
+        inventory = checkPoint.getInventory();
+    }
+
+    public void clearCheckPoint() {
+        checkPoint.clear();
     }
 }
