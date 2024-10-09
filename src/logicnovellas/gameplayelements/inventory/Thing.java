@@ -4,6 +4,7 @@ import logicnovellas.NovellaGame;
 import logicnovellas.gameplayelements.dependencies.DependencyDefinable;
 
 public class Thing implements DependencyDefinable {
+    private int ID;
     private NovellaGame novellaGame;
     private String name;
     private String img;
