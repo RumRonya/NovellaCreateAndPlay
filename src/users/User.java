@@ -1,15 +1,18 @@
 package users;
 
+import logicnovellas.NovellaGame;
+
 import java.util.Date;
+import java.util.List;
 
 public class User {
-    private int ID;
+    private int ID_USER;
     private String login;
     private String password;
     private String email;
     private String img;
     private Date birthday;
-    private int countCreateGames;
-    private int countPlayGames;
+    private List<NovellaGame> createGames;
+    private List<NovellaGame> playGames;
     //lists??
 }

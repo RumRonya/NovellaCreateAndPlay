@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Person {
+    private int ID_PERSON;
     private NovellaGame novellaGame;
     private String name;
     private List<String> listImages;
