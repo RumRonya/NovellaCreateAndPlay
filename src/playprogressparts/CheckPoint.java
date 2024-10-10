@@ -1,19 +1,24 @@
 package playprogressparts;
 
+import logicnovellas.NovellaGame;
 import logicnovellas.gameplayelements.inventory.Inventory;
 import logicnovellas.gameplayelements.inventory.Thing;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
-import java.util.Map;
 
 public class CheckPoint {
+    private int ID;
+    private PlayProgress progress;
     private Inventory inventory;
     private List<Choice> choiceList;
+    private Date saveDate;
 
-    public CheckPoint() {
-        inventory = new Inventory();
-        choiceList = new ArrayList<>();
+    public CheckPoint(PlayProgress playProgress) {
+        playProgress.setCheckPoint(this);
+        inventory = playProgress.inventory;
+        choiceList = playProgress.choiceList;
     }
 
     public Inventory getInventory() {

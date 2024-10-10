@@ -14,12 +14,14 @@ import java.util.List;
 public class PlayProgress {
     private User player;
     public NovellaGame novellaGame;
-    private Inventory inventory;
+    public Inventory inventory;
     public List<Choice> choiceList;
     private CheckPoint checkPoint;
     private Date saveDate;
 
-
+    public void setCheckPoint(CheckPoint checkPoint) {
+        this.checkPoint = checkPoint;
+    }
 
     public boolean isContain(DependencyDefinable dependentObject) {
         if (dependentObject==null) return false;
