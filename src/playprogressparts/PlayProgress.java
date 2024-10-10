@@ -6,15 +6,18 @@ import logicnovellas.gameplayelements.inventory.Thing;
 import logicnovellas.gameplayelements.Scene;
 import logicnovellas.gameplayelements.answers.TypeEnd;
 import logicnovellas.gameplayelements.dependencies.DependencyDefinable;
+import users.User;
 
+import java.util.Date;
 import java.util.List;
 
 public class PlayProgress {
-    private int ID_USER;
+    private User player;
     public NovellaGame novellaGame;
     private Inventory inventory;
     public List<Choice> choiceList;
     private CheckPoint checkPoint;
+    private Date saveDate;
 
 
 
