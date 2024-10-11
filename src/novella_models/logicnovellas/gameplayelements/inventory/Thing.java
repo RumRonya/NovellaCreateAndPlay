@@ -1,7 +1,7 @@
-package logicnovellas.gameplayelements.inventory;
+package novella_models.logicnovellas.gameplayelements.inventory;
 
-import logicnovellas.NovellaGame;
-import logicnovellas.gameplayelements.dependencies.DependencyDefinable;
+import novella_models.logicnovellas.NovellaGame;
+import novella_models.logicnovellas.gameplayelements.dependencies.DependencyDefinable;
 
 public class Thing implements DependencyDefinable {
     private int ID;

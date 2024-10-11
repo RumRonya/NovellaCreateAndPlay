@@ -1,9 +1,11 @@
-import logicnovellas.NovellaGame;
-import logicnovellas.gameplayelements.Scene;
-import logicnovellas.gameplayelements.answers.Answer;
-import logicnovellas.gameplayelements.dialogs.Dialog;
-import playprogressparts.Choice;
-import playprogressparts.PlayProgress;
+package novella_models;
+
+import novella_models.logicnovellas.NovellaGame;
+import novella_models.logicnovellas.gameplayelements.Scene;
+import novella_models.logicnovellas.gameplayelements.answers.Answer;
+import novella_models.logicnovellas.gameplayelements.dialogs.Dialog;
+import novella_models.playprogressparts.Choice;
+import novella_models.playprogressparts.PlayProgress;
 
 public class GamePlay {
     private NovellaGame novellaGame;

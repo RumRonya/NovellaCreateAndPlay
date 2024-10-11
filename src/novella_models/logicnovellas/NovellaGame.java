@@ -1,7 +1,7 @@
-package logicnovellas;
+package novella_models.logicnovellas;
 
-import logicnovellas.gameplayelements.Scene;
-import users.User;
+import novella_models.logicnovellas.gameplayelements.Scene;
+import novella_models.users.User;
 
 import java.util.Date;
 import java.util.List;

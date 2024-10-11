@@ -1,8 +1,6 @@
-package playprogressparts;
+package novella_models.playprogressparts;
 
-import logicnovellas.NovellaGame;
-import logicnovellas.gameplayelements.inventory.Inventory;
-import logicnovellas.gameplayelements.inventory.Thing;
+import novella_models.logicnovellas.gameplayelements.inventory.Inventory;
 
 import java.util.ArrayList;
 import java.util.Date;

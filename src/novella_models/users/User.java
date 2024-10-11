@@ -1,6 +1,6 @@
-package users;
+package novella_models.users;
 
-import logicnovellas.NovellaGame;
+import novella_models.logicnovellas.NovellaGame;
 
 import java.util.Date;
 import java.util.List;

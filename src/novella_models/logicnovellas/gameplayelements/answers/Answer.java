@@ -1,12 +1,9 @@
-package logicnovellas.gameplayelements.answers;
+package novella_models.logicnovellas.gameplayelements.answers;
 
-import logicnovellas.NovellaGame;
-import logicnovellas.gameplayelements.Scene;
-import logicnovellas.gameplayelements.dependencies.DependenciesList;
-import logicnovellas.gameplayelements.inventory.*;
-import playprogressparts.PlayProgress;
-
-import java.util.Map;
+import novella_models.logicnovellas.gameplayelements.Scene;
+import novella_models.logicnovellas.gameplayelements.dependencies.DependenciesList;
+import novella_models.logicnovellas.gameplayelements.inventory.*;
+import novella_models.playprogressparts.PlayProgress;
 
 public class Answer extends ChangerInventory{
     private int ID_ANSWER;

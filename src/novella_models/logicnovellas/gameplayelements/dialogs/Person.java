@@ -1,6 +1,6 @@
-package logicnovellas.gameplayelements.dialogs;
+package novella_models.logicnovellas.gameplayelements.dialogs;
 
-import logicnovellas.NovellaGame;
+import novella_models.logicnovellas.NovellaGame;
 
 import java.util.ArrayList;
 import java.util.List;

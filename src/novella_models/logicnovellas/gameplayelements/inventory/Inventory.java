@@ -1,6 +1,5 @@
-package logicnovellas.gameplayelements.inventory;
+package novella_models.logicnovellas.gameplayelements.inventory;
 
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 

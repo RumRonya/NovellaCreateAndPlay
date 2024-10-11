@@ -1,6 +1,6 @@
-package playprogressparts;
+package novella_models.playprogressparts;
 
-import logicnovellas.gameplayelements.dependencies.DependencyDefinable;
+import novella_models.logicnovellas.gameplayelements.dependencies.DependencyDefinable;
 
 public class Choice implements DependencyDefinable {
     private int numScene;

@@ -1,12 +1,12 @@
-package playprogressparts;
+package novella_models.playprogressparts;
 
-import logicnovellas.NovellaGame;
-import logicnovellas.gameplayelements.inventory.Inventory;
-import logicnovellas.gameplayelements.inventory.Thing;
-import logicnovellas.gameplayelements.Scene;
-import logicnovellas.gameplayelements.answers.TypeEnd;
-import logicnovellas.gameplayelements.dependencies.DependencyDefinable;
-import users.User;
+import novella_models.logicnovellas.NovellaGame;
+import novella_models.logicnovellas.gameplayelements.inventory.Inventory;
+import novella_models.logicnovellas.gameplayelements.inventory.Thing;
+import novella_models.logicnovellas.gameplayelements.Scene;
+import novella_models.logicnovellas.gameplayelements.answers.TypeEnd;
+import novella_models.logicnovellas.gameplayelements.dependencies.DependencyDefinable;
+import novella_models.users.User;
 
 import java.util.Date;
 import java.util.List;

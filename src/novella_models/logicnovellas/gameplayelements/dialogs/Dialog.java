@@ -1,10 +1,9 @@
-package logicnovellas.gameplayelements.dialogs;
+package novella_models.logicnovellas.gameplayelements.dialogs;
 
-import logicnovellas.NovellaGame;
-import logicnovellas.gameplayelements.Scene;
-import logicnovellas.gameplayelements.dependencies.DependenciesList;
-import logicnovellas.gameplayelements.inventory.ChangerInventory;
-import playprogressparts.PlayProgress;
+import novella_models.logicnovellas.gameplayelements.Scene;
+import novella_models.logicnovellas.gameplayelements.dependencies.DependenciesList;
+import novella_models.logicnovellas.gameplayelements.inventory.ChangerInventory;
+import novella_models.playprogressparts.PlayProgress;
 
 public class Dialog extends ChangerInventory{
     private int ID_DIALOG;

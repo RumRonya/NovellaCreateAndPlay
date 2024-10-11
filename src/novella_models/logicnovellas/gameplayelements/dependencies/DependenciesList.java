@@ -1,6 +1,6 @@
-package logicnovellas.gameplayelements.dependencies;
+package novella_models.logicnovellas.gameplayelements.dependencies;
 
-import playprogressparts.PlayProgress;
+import novella_models.playprogressparts.PlayProgress;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,6 +1,6 @@
-package logicnovellas.gameplayelements.inventory;
+package novella_models.logicnovellas.gameplayelements.inventory;
 
-import playprogressparts.PlayProgress;
+import novella_models.playprogressparts.PlayProgress;
 
 import java.util.HashMap;
 import java.util.Map;
