@@ -12,7 +12,7 @@ public class CheckPoint {
     private PlayProgress progress;
     private Inventory inventory;
     private List<Choice> choiceList;
-    private Diary diary;
+    private List<Note> diary;
     private LocalDateTime saveDate;
 
     public CheckPoint(PlayProgress playProgress) {

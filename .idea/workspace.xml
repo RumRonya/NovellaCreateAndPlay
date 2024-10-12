@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="percentDone">
+    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="change Date to LocalDateTime">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/novella_models/playprogressparts/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/novella_models/playprogressparts/Note.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novella_models/playprogressparts/CheckPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/novella_models/playprogressparts/CheckPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novella_models/playprogressparts/Diary.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/novella_models/playprogressparts/PlayProgress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/novella_models/playprogressparts/PlayProgress.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +121,7 @@
       <workItem from="1728366443672" duration="7381000" />
       <workItem from="1728456150485" duration="341000" />
       <workItem from="1728554167387" duration="3687000" />
-      <workItem from="1728629882562" duration="6614000" />
+      <workItem from="1728629882562" duration="7413000" />
     </task>
     <task id="LOCAL-00001" summary="2 new classes">
       <option name="closed" value="true" />
@@ -394,7 +395,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728724841166</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="change Date to LocalDateTime">
+      <option name="closed" value="true" />
+      <created>1728738728541</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1728738728541</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,7 +449,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="package Dependency" />
     <MESSAGE value="a lit change" />
     <MESSAGE value="new classes" />
     <MESSAGE value="fix a bit" />
@@ -465,6 +473,7 @@
     <MESSAGE value="add Genre.java" />
     <MESSAGE value="add Diary and Note" />
     <MESSAGE value="percentDone" />
-    <option name="LAST_COMMIT_MESSAGE" value="percentDone" />
+    <MESSAGE value="change Date to LocalDateTime" />
+    <option name="LAST_COMMIT_MESSAGE" value="change Date to LocalDateTime" />
   </component>
 </project>

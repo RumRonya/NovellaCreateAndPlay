@@ -19,7 +19,7 @@ public class PlayProgress {
     public Inventory inventory;
     public List<Choice> choiceList;
     private CheckPoint checkPoint;
-    private Diary diary;
+    private List<Note> diary;
     private Set<Integer> doneScene;
     private double percentDone;
     private LocalDateTime saveDate;
@@ -32,11 +32,11 @@ public class PlayProgress {
         this.doneScene = doneScene;
     }
 
-    public Diary getDiary() {
+    public List<Note> getDiary() {
         return diary;
     }
 
-    public void setDiary(Diary diary) {
+    public void setDiary(List<Note> diary) {
         this.diary = diary;
     }
 
