@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="change Date to LocalDateTime">
+    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="delete Diary.java, needed only Note.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/novella_models/playprogressparts/CheckPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/novella_models/playprogressparts/CheckPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/novella_models/playprogressparts/Diary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/novella_models/playprogressparts/PlayProgress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/novella_models/playprogressparts/PlayProgress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novella_models/logicnovellas/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/novella_models/logicnovellas/Genre.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +119,7 @@
       <workItem from="1728366443672" duration="7381000" />
       <workItem from="1728456150485" duration="341000" />
       <workItem from="1728554167387" duration="3687000" />
-      <workItem from="1728629882562" duration="7413000" />
+      <workItem from="1728629882562" duration="8152000" />
     </task>
     <task id="LOCAL-00001" summary="2 new classes">
       <option name="closed" value="true" />
@@ -403,7 +401,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728738728541</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="delete Diary.java, needed only Note.java">
+      <option name="closed" value="true" />
+      <created>1728739366221</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1728739366221</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,7 +455,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="a lit change" />
     <MESSAGE value="new classes" />
     <MESSAGE value="fix a bit" />
     <MESSAGE value="dependencies and inventory" />
@@ -474,6 +479,7 @@
     <MESSAGE value="add Diary and Note" />
     <MESSAGE value="percentDone" />
     <MESSAGE value="change Date to LocalDateTime" />
-    <option name="LAST_COMMIT_MESSAGE" value="change Date to LocalDateTime" />
+    <MESSAGE value="delete Diary.java, needed only Note.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete Diary.java, needed only Note.java" />
   </component>
 </project>
