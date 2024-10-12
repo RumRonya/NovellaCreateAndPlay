@@ -17,6 +17,7 @@ public class PlayProgress {
     public Inventory inventory;
     public List<Choice> choiceList;
     private CheckPoint checkPoint;
+    private Diary diary;
     private Date saveDate;
 
     public void setCheckPoint(CheckPoint checkPoint) {
