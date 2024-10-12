@@ -14,6 +14,7 @@ public class NovellaGame {
     private String name;
     private String poster;
     private String description;
+    private Genre genre;
     private double rating;
     private int ageRestriction;
     private Duration duration;
