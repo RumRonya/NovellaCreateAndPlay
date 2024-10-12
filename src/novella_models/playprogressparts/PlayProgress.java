@@ -8,6 +8,7 @@ import novella_models.logicnovellas.gameplayelements.answers.TypeEnd;
 import novella_models.logicnovellas.gameplayelements.dependencies.DependencyDefinable;
 import novella_models.users.User;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
@@ -21,7 +22,7 @@ public class PlayProgress {
     private Diary diary;
     private Set<Integer> doneScene;
     private double percentDone;
-    private Date saveDate;
+    private LocalDateTime saveDate;
 
     public Set<Integer> getDoneScene() {
         return doneScene;
@@ -29,6 +30,14 @@ public class PlayProgress {
 
     public void setDoneScene(Set<Integer> doneScene) {
         this.doneScene = doneScene;
+    }
+
+    public Diary getDiary() {
+        return diary;
+    }
+
+    public void setDiary(Diary diary) {
+        this.diary = diary;
     }
 
     public PlayProgress() {

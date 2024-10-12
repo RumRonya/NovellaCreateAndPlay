@@ -2,6 +2,7 @@ package novella_models.playprogressparts;
 
 import novella_models.logicnovellas.gameplayelements.inventory.Inventory;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -12,7 +13,7 @@ public class CheckPoint {
     private Inventory inventory;
     private List<Choice> choiceList;
     private Diary diary;
-    private Date saveDate;
+    private LocalDateTime saveDate;
 
     public CheckPoint(PlayProgress playProgress) {
         playProgress.setCheckPoint(this);
