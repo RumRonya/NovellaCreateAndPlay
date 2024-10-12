@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="start work with dao" />
+    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="add Diary and Note" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,6 +79,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="novella_models.playprogressparts" />
       <recent name="playprogressparts" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -115,7 +116,7 @@
       <workItem from="1728366443672" duration="7381000" />
       <workItem from="1728456150485" duration="341000" />
       <workItem from="1728554167387" duration="3687000" />
-      <workItem from="1728629882562" duration="2659000" />
+      <workItem from="1728629882562" duration="4598000" />
     </task>
     <task id="LOCAL-00001" summary="2 new classes">
       <option name="closed" value="true" />
@@ -365,7 +366,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728632720311</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="add Genre.java">
+      <option name="closed" value="true" />
+      <created>1728722872481</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1728722872481</updated>
+    </task>
+    <task id="LOCAL-00033" summary="add Diary and Note">
+      <option name="closed" value="true" />
+      <created>1728723977370</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1728723977370</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,8 +428,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2 new classes" />
-    <MESSAGE value="field id" />
     <MESSAGE value="class NovellaGame - field" />
     <MESSAGE value="package Dependency" />
     <MESSAGE value="a lit change" />
@@ -436,6 +451,8 @@
     <MESSAGE value="some changes" />
     <MESSAGE value="refactoring packages" />
     <MESSAGE value="start work with dao" />
-    <option name="LAST_COMMIT_MESSAGE" value="start work with dao" />
+    <MESSAGE value="add Genre.java" />
+    <MESSAGE value="add Diary and Note" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Diary and Note" />
   </component>
 </project>

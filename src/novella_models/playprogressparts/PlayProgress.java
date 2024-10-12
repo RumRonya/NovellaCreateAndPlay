@@ -10,6 +10,7 @@ import novella_models.users.User;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 public class PlayProgress {
     private User player;
@@ -18,7 +19,22 @@ public class PlayProgress {
     public List<Choice> choiceList;
     private CheckPoint checkPoint;
     private Diary diary;
+    private Set<Integer> doneScene;
+    private double percentDone;
     private Date saveDate;
+
+    public Set<Integer> getDoneScene() {
+        return doneScene;
+    }
+
+    public void setDoneScene(Set<Integer> doneScene) {
+        this.doneScene = doneScene;
+    }
+
+    public PlayProgress() {
+
+        percentDone = (doneScene.size())/(double)(novellaGame.getScenes().size());
+    }
 
     public void setCheckPoint(CheckPoint checkPoint) {
         this.checkPoint = checkPoint;

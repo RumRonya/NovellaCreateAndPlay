@@ -24,6 +24,8 @@ public class GamePlay {
     }
 
     public Scene runCurrentScene(Answer answer){
+        playProgress.getDoneScene().add(currentScene.getNumScene());
+
         for (Dialog dialog: currentScene.getDialogs()){
             dialog.run(playProgress);
         }

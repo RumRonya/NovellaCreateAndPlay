@@ -22,6 +22,14 @@ public class NovellaGame {
     private Date updateDate;
     private List<Scene> scenes;
 
+    public List<Scene> getScenes() {
+        return scenes;
+    }
+
+    public void setScenes(List<Scene> scenes) {
+        this.scenes = scenes;
+    }
+
     public Scene sceneByNum(int i) {
         return new Scene();
     }
