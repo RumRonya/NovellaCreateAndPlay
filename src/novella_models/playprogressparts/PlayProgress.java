@@ -10,15 +10,14 @@ import novella_models.users.User;
 
 import javax.management.InstanceNotFoundException;
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.List;
 import java.util.Set;
 
 public class PlayProgress {
     private User player;
-    public NovellaGame novellaGame;
-    public Inventory inventory;
-    public List<Choice> choiceList;
+    private NovellaGame novellaGame;
+    private Inventory inventory;
+    private List<Choice> choiceList;
     private CheckPoint checkPoint;
     private List<Note> diary;
     private Set<Integer> doneScene;
@@ -167,6 +166,22 @@ public class PlayProgress {
 
     public void removeThing(Thing thing) {
         inventory.removeThing(thing);
+    }
+
+    public void addChoice(Choice choice) {
+        choiceList.add(choice);
+    }
+
+    public void addNote(Note note) {
+        diary.add(note);
+    }
+
+    public void removeNote(Note note) {
+        diary.remove(note);
+    }
+
+    public void clearNotes() {
+        diary.clear();
     }
 
     public void updateCheckPoint() {

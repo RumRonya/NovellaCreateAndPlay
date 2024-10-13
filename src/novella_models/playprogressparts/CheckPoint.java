@@ -16,8 +16,8 @@ public class CheckPoint {
 
     public CheckPoint(PlayProgress playProgress) {
         playProgress.setCheckPoint(this);
-        inventory = playProgress.inventory;
-        choiceList = playProgress.choiceList;
+        inventory = playProgress.getInventory();
+        choiceList = playProgress.getChoiceList();
         diary = playProgress.getDiary();
         saveDate = LocalDateTime.now();
     }

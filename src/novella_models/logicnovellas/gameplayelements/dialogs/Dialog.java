@@ -3,15 +3,20 @@ package novella_models.logicnovellas.gameplayelements.dialogs;
 import novella_models.logicnovellas.gameplayelements.Scene;
 import novella_models.logicnovellas.gameplayelements.dependencies.DependenciesList;
 import novella_models.logicnovellas.gameplayelements.inventory.ChangerInventory;
+import novella_models.playprogressparts.DiaryWriter;
+import novella_models.playprogressparts.Note;
 import novella_models.playprogressparts.PlayProgress;
 
-public class Dialog extends ChangerInventory{
+import java.time.LocalDateTime;
+
+public class Dialog extends ChangerInventory implements DiaryWriter {
     private int ID_DIALOG;
     private Scene scene;
     private int numDialog;
     private Person person;
     private String imgPerson;
     private Position position;
+    private String text;
     private DependenciesList dependencies = new DependenciesList();
 
     public Dialog() {
@@ -32,6 +37,17 @@ public class Dialog extends ChangerInventory{
         this.ID_DIALOG = ID_DIALOG;
     }
 
+    public Dialog(int ID_DIALOG, Scene scene, int numDialog, Person person, String imgPerson, Position position, String text, DependenciesList dependencies) {
+        this.ID_DIALOG = ID_DIALOG;
+        this.scene = scene;
+        this.numDialog = numDialog;
+        this.person = person;
+        this.imgPerson = imgPerson;
+        this.position = position;
+        this.text = text;
+        this.dependencies = dependencies;
+    }
+
     public int getID_DIALOG() {
         return ID_DIALOG;
     }
@@ -46,6 +62,14 @@ public class Dialog extends ChangerInventory{
 
     public void setScene(Scene scene) {
         this.scene = scene;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
     }
 
     public int getNumDialog() {
@@ -96,5 +120,10 @@ public class Dialog extends ChangerInventory{
 
     public boolean isPlay(PlayProgress playProgress) {
         return dependencies.isPlay(playProgress);
+    }
+
+    @Override
+    public void addNote(PlayProgress playProgress) {
+        playProgress.addNote(new Note(person.getName(), this.text, LocalDateTime.now()));
     }
 }

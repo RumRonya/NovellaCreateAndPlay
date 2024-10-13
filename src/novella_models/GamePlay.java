@@ -15,7 +15,7 @@ public class GamePlay {
     private Scene currentScene;
 
     public GamePlay(PlayProgress playProgress) throws InstanceNotFoundException {
-        this.novellaGame = playProgress.novellaGame;
+        this.novellaGame = playProgress.getNovellaGame();
         this.playProgress = playProgress;
         Scene lastScene = playProgress.getCurrentScene();
         this.currentScene = lastScene.convertToPlayScene(playProgress);
@@ -26,7 +26,6 @@ public class GamePlay {
     }
 
     public Scene runCurrentScene(Answer answer) throws InstanceNotFoundException {
-        playProgress.getDoneScene().add(currentScene.getNumScene());
         playProgress.getDoneScene().add(currentScene.getNumScene());
 
         for (Dialog dialog: currentScene.getDialogs()){
@@ -39,7 +38,7 @@ public class GamePlay {
             currentScene = playProgress.gameOver(answer.getTypeEnd());
         }
         else {
-            playProgress.choiceList.add(new Choice(currentScene.getNumScene(), answer.getNumAnswer()));
+            playProgress.addChoice(new Choice(currentScene.getNumScene(), answer.getNumAnswer()));
             int numNextScene = currentScene.getNumNextSceneByPlayAnswer(answer.getNumAnswer());
             currentScene = novellaGame.sceneByNum(numNextScene);
         }
