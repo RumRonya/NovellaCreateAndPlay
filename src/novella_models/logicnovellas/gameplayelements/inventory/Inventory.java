@@ -1,10 +1,24 @@
 package novella_models.logicnovellas.gameplayelements.inventory;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
 public class Inventory {
+
     private Map<Thing, Integer> things;
+
+    public Inventory() {
+        things = new HashMap<Thing, Integer>();
+    }
+
+    public Inventory(Map<Thing, Integer> things) {
+        this.things = things;
+    }
+
+    public Map<Thing, Integer> getThingsWithCount(){
+        return things;
+    }
 
     public Set<Thing> getThings() {
         return things.keySet();
@@ -14,7 +28,7 @@ public class Inventory {
         this.things = things;
     }
 
-    public void add(Thing thing) {
+    public void addThing(Thing thing) {
         if (this.things == null) {return;}
         if (this.things.containsKey(thing) && thing.isCountable()) {
             this.things.put(thing, this.things.get(thing) + 1);
@@ -24,7 +38,7 @@ public class Inventory {
         }
     }
 
-    public void remove(Thing thing) {
+    public void removeThing(Thing thing) {
         if (this.things == null) return;
         if (!this.things.containsKey(thing)) return;
         if (thing.isCountable()) {
@@ -40,7 +54,7 @@ public class Inventory {
         }
     }
 
-    public void clear() {
+    public void clearInventory() {
         this.things = null;
     }
 }

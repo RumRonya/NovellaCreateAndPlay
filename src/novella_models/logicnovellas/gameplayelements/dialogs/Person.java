@@ -11,10 +11,25 @@ public class Person {
     private String name;
     private List<String> listImages;
 
+    public Person(String name, NovellaGame novellaGame, int ID_PERSON) {
+        this.name = name;
+        this.novellaGame = novellaGame;
+        this.ID_PERSON = ID_PERSON;
+        this.listImages = new ArrayList<>();
+    }
+
     public Person(NovellaGame novellaGame, String name, List<String> listImages) {
         this.novellaGame = novellaGame;
         this.name = name;
         this.listImages = listImages;
+    }
+
+    public int getID_PERSON() {
+        return ID_PERSON;
+    }
+
+    public void setID_PERSON(int ID_PERSON) {
+        this.ID_PERSON = ID_PERSON;
     }
 
     public NovellaGame getNovellaGame() {

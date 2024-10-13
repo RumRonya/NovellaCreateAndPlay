@@ -7,23 +7,25 @@ import novella_models.logicnovellas.gameplayelements.dialogs.Dialog;
 import novella_models.playprogressparts.Choice;
 import novella_models.playprogressparts.PlayProgress;
 
+import javax.management.InstanceNotFoundException;
+
 public class GamePlay {
     private NovellaGame novellaGame;
     private PlayProgress playProgress;
     private Scene currentScene;
 
-    public GamePlay(PlayProgress playProgress) {
+    public GamePlay(PlayProgress playProgress) throws InstanceNotFoundException {
         this.novellaGame = playProgress.novellaGame;
         this.playProgress = playProgress;
         Scene lastScene = playProgress.getCurrentScene();
         this.currentScene = lastScene.convertToPlayScene(playProgress);
     }
 
-    public Scene runCurrentScene(int numAnswer){
+    public Scene runCurrentScene(int numAnswer) throws InstanceNotFoundException {
         return runCurrentScene(currentScene.getAnswerByNum(numAnswer));
     }
 
-    public Scene runCurrentScene(Answer answer){
+    public Scene runCurrentScene(Answer answer) throws InstanceNotFoundException {
         playProgress.getDoneScene().add(currentScene.getNumScene());
         playProgress.getDoneScene().add(currentScene.getNumScene());
 

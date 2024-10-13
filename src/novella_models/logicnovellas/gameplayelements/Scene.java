@@ -5,6 +5,7 @@ import novella_models.logicnovellas.gameplayelements.answers.Answer;
 import novella_models.logicnovellas.gameplayelements.dialogs.Dialog;
 import novella_models.playprogressparts.PlayProgress;
 
+import javax.management.InstanceNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -133,26 +134,27 @@ public class Scene {
     }
 
     public Scene convertToPlayScene(PlayProgress playProgress){
+        Scene playScene = this;
         List<Answer> playAnswers = new ArrayList<>();
         for (Answer answer : answers) {
             if (answer.isPlay(playProgress)) playAnswers.add(answer);
         }
-        answers = playAnswers;
+        playScene.answers = playAnswers;
 
         List<Dialog> playDialogs = new ArrayList<>();
         for (Dialog dialog : dialogs) {
             if (dialog.isPlay(playProgress)) playDialogs.add(dialog);
         }
-        dialogs = playDialogs;
+        playScene.dialogs = playDialogs;
 
         return this;
     }
 
-    public int getNumNextSceneByPlayAnswer(int numAnswer) {
+    public int getNumNextSceneByPlayAnswer(int numAnswer) throws InstanceNotFoundException {
         for (Answer answer : answers) {
             if (answer.getNumAnswer() == numAnswer) return answer.getNextScene();
         }
-        return 0;
+        throw new InstanceNotFoundException();
     }
 
     public Answer getAnswerByNum(int numAnswer) {

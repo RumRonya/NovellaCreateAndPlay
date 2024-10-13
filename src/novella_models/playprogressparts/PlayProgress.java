@@ -8,6 +8,7 @@ import novella_models.logicnovellas.gameplayelements.answers.TypeEnd;
 import novella_models.logicnovellas.gameplayelements.dependencies.DependencyDefinable;
 import novella_models.users.User;
 
+import javax.management.InstanceNotFoundException;
 import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
@@ -23,6 +24,71 @@ public class PlayProgress {
     private Set<Integer> doneScene;
     private double percentDone;
     private LocalDateTime saveDate;
+
+    public PlayProgress() {
+        recalculatePercentDone();
+    }
+
+    public PlayProgress(User player, NovellaGame novellaGame, Inventory inventory, List<Choice> choiceList, CheckPoint checkPoint, List<Note> diary, Set<Integer> doneScene, double percentDone, LocalDateTime saveDate) {
+        this.player = player;
+        this.novellaGame = novellaGame;
+        this.inventory = inventory;
+        this.choiceList = choiceList;
+        this.checkPoint = checkPoint;
+        this.diary = diary;
+        this.doneScene = doneScene;
+        this.percentDone = percentDone;
+        this.saveDate = saveDate;
+    }
+
+    private void recalculatePercentDone(){
+        if (doneScene==null || doneScene.isEmpty() || novellaGame.getScenes() == null || novellaGame.getScenes().isEmpty()) return;
+        percentDone = (double) doneScene.size() / (double) novellaGame.getScenes().size() * 100;
+    }
+
+    public User getPlayer() {
+        return player;
+    }
+
+    public void setPlayer(User player) {
+        this.player = player;
+    }
+
+    public NovellaGame getNovellaGame() {
+        return novellaGame;
+    }
+
+    public void setNovellaGame(NovellaGame novellaGame) {
+        this.novellaGame = novellaGame;
+    }
+
+    public Inventory getInventory() {
+        return inventory;
+    }
+
+    public void setInventory(Inventory inventory) {
+        this.inventory = inventory;
+    }
+
+    public List<Choice> getChoiceList() {
+        return choiceList;
+    }
+
+    public void setChoiceList(List<Choice> choiceList) {
+        this.choiceList = choiceList;
+    }
+
+    public CheckPoint getCheckPoint() {
+        return checkPoint;
+    }
+
+    public LocalDateTime getSaveDate() {
+        return saveDate;
+    }
+
+    public void setSaveDate(LocalDateTime saveDate) {
+        this.saveDate = saveDate;
+    }
 
     public Set<Integer> getDoneScene() {
         return doneScene;
@@ -41,24 +107,12 @@ public class PlayProgress {
         return percentDone;
     }
 
-    public void setPercentDone(double percentDone) {
-        this.percentDone = percentDone;
-    }
-
-    private void recalculatePercentDone(){
-        percentDone = (double) doneScene.size() / (double) novellaGame.getScenes().size() * 100;
-    }
-
     public List<Note> getDiary() {
         return diary;
     }
 
     public void setDiary(List<Note> diary) {
         this.diary = diary;
-    }
-
-    public PlayProgress() {
-        recalculatePercentDone();
     }
 
     public void setCheckPoint(CheckPoint checkPoint) {
@@ -88,16 +142,16 @@ public class PlayProgress {
         return false;
     }
 
-    public Scene getCurrentScene() {
+    public Scene getCurrentScene() throws InstanceNotFoundException {
         return novellaGame.sceneByNum(numCurrentScene());
     }
 
-    private int numCurrentScene() {
+    private int numCurrentScene() throws InstanceNotFoundException {
         Scene lastScene = novellaGame.sceneByNum(choiceList.getLast().getNumScene());
         return lastScene.getNumNextSceneByPlayAnswer(choiceList.getLast().getNumAnswer());
     }
 
-    public Scene gameOver(TypeEnd typeEnd){
+    public Scene gameOver(TypeEnd typeEnd) throws InstanceNotFoundException {
         if (typeEnd==TypeEnd.BAD) {
             backToCheckPoint();
         }
@@ -108,11 +162,11 @@ public class PlayProgress {
     }
 
     public void addThing(Thing thing) {
-        inventory.add(thing);
+        inventory.addThing(thing);
     }
 
     public void removeThing(Thing thing) {
-        inventory.remove(thing);
+        inventory.removeThing(thing);
     }
 
     public void updateCheckPoint() {

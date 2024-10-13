@@ -10,14 +10,6 @@ public class Thing implements DependencyDefinable {
     private String img;
     private boolean isCountable = false;
 
-    public boolean isCountable() {
-        return isCountable;
-    }
-
-    public void setCountable(boolean countable) {
-        isCountable = countable;
-    }
-
     public Thing() {
         novellaGame = new NovellaGame();
         this.name = "AnyThing";
@@ -47,6 +39,14 @@ public class Thing implements DependencyDefinable {
         this.name = name;
     }
 
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
+    }
+
     public NovellaGame getNovellaGame() {
         return novellaGame;
     }
@@ -69,5 +69,13 @@ public class Thing implements DependencyDefinable {
 
     public void setImg(String img) {
         this.img = img;
+    }
+
+    public boolean isCountable() {
+        return isCountable;
+    }
+
+    public void setCountable(boolean countable) {
+        isCountable = countable;
     }
 }

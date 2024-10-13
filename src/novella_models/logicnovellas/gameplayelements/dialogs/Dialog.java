@@ -17,6 +17,12 @@ public class Dialog extends ChangerInventory{
     public Dialog() {
     }
 
+    public Dialog(int ID_DIALOG, Scene scene, int numDialog) {
+        this.ID_DIALOG = ID_DIALOG;
+        this.scene = scene;
+        this.numDialog = numDialog;
+    }
+
     public Dialog(Scene scene, int numDialog, Person person, String imgPerson, Position position, int ID_DIALOG) {
         this.scene = scene;
         this.numDialog = numDialog;
@@ -80,6 +86,12 @@ public class Dialog extends ChangerInventory{
 
     public void setDependencies(DependenciesList dependencies) {
         this.dependencies = dependencies;
+    }
+
+    public void setInfoPerson(Person person, String imgPerson, Position position) {
+        this.person = person;
+        this.imgPerson = imgPerson;
+        this.position = position;
     }
 
     public boolean isPlay(PlayProgress playProgress) {

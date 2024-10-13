@@ -11,6 +11,11 @@ public class Choice implements DependencyDefinable {
         this.numAnswer = numAnswer;
     }
 
+    public Choice(Choice choice) {
+        this.numScene = choice.numScene;
+        this.numAnswer = choice.numAnswer;
+    }
+
     public int getNumScene() {
         return numScene;
     }
