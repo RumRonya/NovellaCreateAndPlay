@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="add genres" />
+    <list default="true" id="be7f5e63-e985-4fb0-8706-3da176104668" name="Changes" comment="little change" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,6 +118,7 @@
       <workItem from="1728554167387" duration="3687000" />
       <workItem from="1728629882562" duration="8267000" />
       <workItem from="1728829396538" duration="754000" />
+      <workItem from="1728836238303" duration="1225000" />
     </task>
     <task id="LOCAL-00001" summary="2 new classes">
       <option name="closed" value="true" />
@@ -431,7 +432,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728830098648</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="little change">
+      <option name="closed" value="true" />
+      <created>1728837460919</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1728837460919</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,7 +486,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix a bit" />
     <MESSAGE value="dependencies and inventory" />
     <MESSAGE value="ew fields" />
     <MESSAGE value="dependencies and progress" />
@@ -502,6 +510,7 @@
     <MESSAGE value="change Date to LocalDateTime" />
     <MESSAGE value="delete Diary.java, needed only Note.java" />
     <MESSAGE value="add genres" />
-    <option name="LAST_COMMIT_MESSAGE" value="add genres" />
+    <MESSAGE value="little change" />
+    <option name="LAST_COMMIT_MESSAGE" value="little change" />
   </component>
 </project>
