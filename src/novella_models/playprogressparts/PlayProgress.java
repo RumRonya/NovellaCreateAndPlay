@@ -32,6 +32,15 @@ public class PlayProgress {
         this.doneScene = doneScene;
     }
 
+    public void addDoneScene(int numScene) {
+        doneScene.add(numScene);
+        recalculatePercentDone();
+    }
+
+    private void recalculatePercentDone(){
+        percentDone = (double) doneScene.size() / (double) novellaGame.getScenes().size() * 100;
+    }
+
     public List<Note> getDiary() {
         return diary;
     }
