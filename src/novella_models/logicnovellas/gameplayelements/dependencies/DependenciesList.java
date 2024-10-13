@@ -22,6 +22,14 @@ public class DependenciesList {
         this.dependencyLogic = dependencyLogic;
     }
 
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
+    }
+
     public List<Dependency> getListDependencies() {
         return listDependencies;
     }
@@ -36,6 +44,18 @@ public class DependenciesList {
 
     public void setDependencyLogic(DependencyLogic dependencyLogic) {
         this.dependencyLogic = dependencyLogic;
+    }
+
+    public void addDependency(Dependency dependency) {
+        listDependencies.add(dependency);
+    }
+
+    public void removeDependency(Dependency dependency) {
+        listDependencies.remove(dependency);
+    }
+
+    public void removeAllDependencies() {
+        listDependencies.clear();
     }
 
     public boolean isPlay(PlayProgress playProgress){

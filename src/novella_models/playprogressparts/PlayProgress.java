@@ -37,6 +37,14 @@ public class PlayProgress {
         recalculatePercentDone();
     }
 
+    public double getPercentDone() {
+        return percentDone;
+    }
+
+    public void setPercentDone(double percentDone) {
+        this.percentDone = percentDone;
+    }
+
     private void recalculatePercentDone(){
         percentDone = (double) doneScene.size() / (double) novellaGame.getScenes().size() * 100;
     }
@@ -50,8 +58,7 @@ public class PlayProgress {
     }
 
     public PlayProgress() {
-
-        percentDone = (doneScene.size())/(double)(novellaGame.getScenes().size());
+        recalculatePercentDone();
     }
 
     public void setCheckPoint(CheckPoint checkPoint) {

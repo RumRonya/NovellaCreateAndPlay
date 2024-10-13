@@ -2,6 +2,7 @@ package novella_models.logicnovellas.gameplayelements.answers;
 
 import novella_models.logicnovellas.gameplayelements.Scene;
 import novella_models.logicnovellas.gameplayelements.dependencies.DependenciesList;
+import novella_models.logicnovellas.gameplayelements.dependencies.Dependency;
 import novella_models.logicnovellas.gameplayelements.inventory.*;
 import novella_models.playprogressparts.PlayProgress;
 
@@ -14,6 +15,15 @@ public class Answer extends ChangerInventory{
     private DependenciesList dependenciesList = new DependenciesList();
 
     public Answer() {
+    }
+
+    public Answer(int ID_ANSWER, Scene scene, int numAnswer, int nextScene, TypeEnd typeEnd, DependenciesList dependenciesList) {
+        this.ID_ANSWER = ID_ANSWER;
+        this.scene = scene;
+        this.numAnswer = numAnswer;
+        this.nextScene = nextScene;
+        this.typeEnd = typeEnd;
+        this.dependenciesList = dependenciesList;
     }
 
     public int getID_ANSWER() {
@@ -62,6 +72,18 @@ public class Answer extends ChangerInventory{
 
     public void setDependenciesList(DependenciesList dependenciesList) {
         this.dependenciesList = dependenciesList;
+    }
+
+    public void addDependencies(Dependency dependency) {
+        dependenciesList.addDependency(dependency);
+    }
+
+    public void removeDependencies(Dependency dependency) {
+        dependenciesList.removeDependency(dependency);
+    }
+
+    public void removeAllDependencies() {
+        dependenciesList.removeAllDependencies();
     }
 
     public boolean isPlay(PlayProgress playProgress) {
