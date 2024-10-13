@@ -123,7 +123,7 @@ public class Dialog extends ChangerInventory implements DiaryWriter {
     }
 
     @Override
-    public void addNote(PlayProgress playProgress) {
+    public void writeNote(PlayProgress playProgress) {
         playProgress.addNote(new Note(person.getName(), this.text, LocalDateTime.now()));
     }
 }

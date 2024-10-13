@@ -29,9 +29,11 @@ public class GamePlay {
         playProgress.getDoneScene().add(currentScene.getNumScene());
 
         for (Dialog dialog: currentScene.getDialogs()){
+            dialog.writeNote(playProgress);
             dialog.run(playProgress);
         }
 
+        answer.writeNote(playProgress);
         answer.run(playProgress);
 
         if (answer.isFinal()){

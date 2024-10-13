@@ -118,7 +118,7 @@ public class Answer extends ChangerInventory implements DiaryWriter {
     }
 
     @Override
-    public void addNote(PlayProgress playProgress) {
+    public void writeNote(PlayProgress playProgress) {
         playProgress.addNote(new Note("You", this.text, LocalDateTime.now()));
     }
 }
