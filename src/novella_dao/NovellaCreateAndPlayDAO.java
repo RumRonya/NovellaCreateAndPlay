@@ -1,12 +1,13 @@
 package novella_dao;
 
+import novella_models.logicnovellas.NovellaGame;
 import novella_models.users.User;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class NovellaCreateAndPlayDAO {
+public class NovellaCreateAndPlayDAO implements NovellaCAPBase{
     private Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/novella_create_and_play", "root", "Ver13deth4");;
 
     public NovellaCreateAndPlayDAO() throws SQLException {
@@ -30,6 +31,26 @@ public class NovellaCreateAndPlayDAO {
 
     public User getUserById(int id) throws SQLException {
         return new UserDAO(connection).findById(id);
+    }
+
+    @Override
+    public void createUser(User user) {
+        try {
+            new UserDAO(connection).createUser(user);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    @Override
+    public void createNovella(NovellaGame novella) {
+        try {
+            new NovellaGameDAO(connection).createNovellaGame(novella);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 }
 

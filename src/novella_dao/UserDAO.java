@@ -5,8 +5,11 @@ import novella_models.users.User;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+
+import static java.lang.String.format;
 
 public class UserDAO {
     private Connection connection;
@@ -50,4 +53,13 @@ public class UserDAO {
         return user;
     }
 
+    public void createUser(User user) throws SQLException {
+        createUser(user.getLogin(), user.getPassword());
+    }
+
+    public void createUser(String login, String password) throws SQLException {
+        String INSERT_USER = "INSERT INTO `novella_create_and_play`.`users` (`login`, `password`), VALUES (%s, %s)";
+        Statement statement = connection.createStatement();
+        statement.executeUpdate(format(INSERT_USER, login, password));
+    }
 }
