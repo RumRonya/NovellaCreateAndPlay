@@ -22,11 +22,11 @@ public class NovellaGameDAO {
     }
 
     public void createNovellaGame(int id_User, String name, String poster, String description, int age) throws SQLException {
-        String INSERT_NEW = "INSERT INTO `novella_create_and_play`.`novellas` (`id_creator`, `name`, `poster`, `description`, `age_restriction`)" +
-                "VALUES (%d, %s, %s, %s, %d)";
+        String INSERT_NEW = "INSERT INTO `novella_create_and_play`.`novellas` (`id_creator`, `name`, `poster`, `description`, `age_restriction`) " +
+                "VALUES (%d, \"%s\", \"%s\", \"%s\", '%d')";
 
         Statement statement = connection.createStatement();
-        ResultSet resultSet = statement.executeQuery(format(INSERT_NEW, id_User, name, poster, description, age));
+        statement.executeUpdate(format(INSERT_NEW, id_User, name, poster, description, age));
         statement.close();
     }
 }

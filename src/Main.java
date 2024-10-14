@@ -9,9 +9,8 @@ import novella_dao.UserDAO;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
-        //Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/novella_create_and_play", "root", "Ver13deth4");
         NovellaCreateAndPlayDAO novellaCreateAndPlayDAO = new NovellaCreateAndPlayDAO();
+        novellaCreateAndPlayDAO.createNovellaGame(1, "Banana's life","banana.png","It's story about life of banana in a little store",0);
         novellaCreateAndPlayDAO.closeConnection();
-
     }
 }

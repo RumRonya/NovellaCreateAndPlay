@@ -58,7 +58,7 @@ public class UserDAO {
     }
 
     public void createUser(String login, String password) throws SQLException {
-        String INSERT_USER = "INSERT INTO `novella_create_and_play`.`users` (`login`, `password`), VALUES (%s, %s)";
+        String INSERT_USER = "INSERT INTO `novella_create_and_play`.`users` (`login`, `password`) VALUES ('%s', '%s')";
         Statement statement = connection.createStatement();
         statement.executeUpdate(format(INSERT_USER, login, password));
     }

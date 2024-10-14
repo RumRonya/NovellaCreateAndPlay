@@ -44,13 +44,30 @@ public class NovellaCreateAndPlayDAO implements NovellaCAPBase{
     }
 
     @Override
-    public void createNovella(NovellaGame novella) {
+    public void createUser(String username, String password) {
+        try {
+            new UserDAO(connection).createUser(username, password);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public void createNovellaGame(NovellaGame novella) {
         try {
             new NovellaGameDAO(connection).createNovellaGame(novella);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+    }
 
+    @Override
+    public void createNovellaGame(int id_User, String name, String poster, String description, int age) {
+        try {
+            new NovellaGameDAO(connection).createNovellaGame(id_User, name, poster, description, age);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
 
